@@ -5,6 +5,7 @@ import MagicButton from "./MagicButton";
 import Image from "next/image";
 import { FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
+import { Button } from "./ui/MovingBorders";
 
 const Footer = () => {
   return (
@@ -29,7 +30,7 @@ const Footer = () => {
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
         </p>
-        <a href="mailto:contact@jsmastery.pro">
+        <a href="mailto:abhinandanverma551@gmail.com">
           <MagicButton
             title="Let's get in touch"
             icon={<FaLocationArrow />}
@@ -51,7 +52,7 @@ const Footer = () => {
               target="_blank"
               
             >
-              <Image src={info.img} alt="icons" width={20} height={20} />
+              
             </Link>
           ))}
         </div>

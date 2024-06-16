@@ -3,7 +3,7 @@ import { link } from "fs";
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Resume", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -74,11 +74,11 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
+    title: "Finance to Manage Your Budget",
     des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
+    img: "/sc1.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    link: "https://finance-seven-psi.vercel.app",
   },
   {
     id: 2,
@@ -109,34 +109,28 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Abhinandan was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Abhinandan's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Abhinandan is the ideal partner.",
+    name: "Vijay Singh",
+    title: "Director of SkilledUp Intelligrnce",
+  },
+  {
+    quote:
+      "Collaborating with Abhinandan was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Abhinandan's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Abhinandan is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Collaborating with Abhinandan was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Abhinandan's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Abhinandan is the ideal partner.",
+    name: "Jenny Wilson",
+    title: "Director of TechSolutions",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
+      "Collaborating with Abhinandan was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Abhinandan's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Abhinandan is the ideal partner.",
+    name: "Rahul Singh",
+    title: "Director of TechSolutions",
+  }
 ];
 
 export const companies = [
@@ -170,6 +164,72 @@ export const companies = [
     img: "/dock.svg",
     nameImg: "/dockerName.svg",
   },
+  {
+    id: 6,
+    name: "figma",
+    img: "/figma.svg",
+    nameImg: "/figmaName.svg",
+  },
+  {
+    id: 9,
+    name: "typescript",
+    img: "/ts.svg",
+    nameImg: "/tsName.svg",
+  },
+  {
+    id: 10,
+    name: "next",
+    img: "/next.svg",
+    nameImg: "/nextName.svg",
+  },
+  {
+    id: 11,
+    name: "three",
+    img: "/three.svg",
+    nameImg: "/threeName.svg",
+  },
+  {
+    id: 12,
+    name: "gsap",
+    img: "/gsap.svg",
+    nameImg: "/gsapName.svg",
+  },
+  {
+    id: 13,
+    name: "firebase",
+    img: "/firebase.svg",
+    nameImg: "/firebaseName.svg",
+  },
+  {
+    id: 16,
+    name: "framer",
+    img: "/fm.svg",
+    nameImg: "/fmName.svg",
+  },
+  {
+    id: 17,
+    name: "contentful",
+    img: "/c.svg",
+    nameImg: "/cName.svg",
+  },
+  {
+    id: 18,
+    name: "shopify",
+    img: "/shopify.svg",
+    nameImg: "/shopifyName.svg",
+  },
+  {
+    id: 19,
+    name: "vercel",
+    img: "/vercel.svg",
+    nameImg: "/vercelName.svg",
+  },
+  {
+    id: 20,
+    name: "netlify",
+    img: "/netlify.svg",
+    nameImg: "/netlifyName.svg",
+  }
 ];
 
 export const workExperience = [

@@ -4,6 +4,8 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
+import { Button } from "./ui/MovingBorders";
+import Link from "next/link";
 
 const RecentProjects = () => {
   return (
@@ -20,7 +22,7 @@ const RecentProjects = () => {
           >
             <PinContainer
               title="/ui.aceternity.com"
-              href="https://twitter.com/mannupaaji"
+              href={item.link}
             >
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
@@ -65,12 +67,14 @@ const RecentProjects = () => {
                   ))}
                 </div>
 
-                <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
-                  </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
-                </div>
+                <Link href={item.link} target="_blank">
+                  <Button className="flex justify-center items-center px-6">
+                    <p className="flex lg:text-lg md:text-xs text-sm text-purple">
+                      Go Live
+                    </p>
+                    <FaLocationArrow className="ms-3" color="#CBACF9" />
+                  </Button>
+                </Link>
               </div>
             </PinContainer>
           </div>
