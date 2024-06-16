@@ -1,25 +1,33 @@
+import Image from 'next/image'
 import React from 'react'
 
 type ConnectButtonProps = {
     title: string,
-    icon: React.ReactNode,
-    hoverColor: string,
+    icon: string,
+    hoverColor?: string,
     href: string,
 }
 function ConnectButton(
     { title, icon, hoverColor, href }: ConnectButtonProps
 ) {
   return (
-    <button className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block" onClick={() => { }}>
+      <button
+          className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block"
+          onClick={() => {
+                window.open(href, '_blank')
+           }}>
         <span className="absolute inset-0 overflow-hidden rounded-full">
             <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
         </span>
-        <div className="relative flex space-x-2 items-center z-10 rounded-full bg-zinc-950 py-0.5 px-4 ring-1 ring-white/10 ">
+        <div className="relative flex space-x-2 items-center z-10 rounded-full bg-zinc-950 py-4 px-4 ring-1 ring-white/10 hover:bg-gradient-to-r">
+
             <span>
-                {title}
-            </span>
-            <span className="text-xs text-white/60">
-                  {icon}
+              <Image
+                      src={icon}
+                      alt={title}
+                      width={20}
+                      height={20}
+                  />
             </span>
               
         </div>
