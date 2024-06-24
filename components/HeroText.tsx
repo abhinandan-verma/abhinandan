@@ -7,13 +7,13 @@ import Link from 'next/link'
 
 function HeroText() {
   return (
-    <WavyBackground className="max-w-4xl mx-auto pb-40">
+    <WavyBackground className="max-w-full mx-auto mt-24 -mb-20">
         <TextGenerateEffect
         words="Transforming Ideas into Scalable Softwares"
         className="text-center text-[40px] md:text-5xl lg:text-6xl"
         />
         <p className="text-base md:text-lg mt-4 text-white font-normal inter-var text-center">
-            Leverage the power of canvas to create a beautiful hero section
+            This is Abhinandan, Full Stack Developer
         </p>
         <Link href="#about">
             <MagicButton

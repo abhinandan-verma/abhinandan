@@ -19,7 +19,7 @@ function Resume() {
             <CardHeader>
                 <CardTitle>My Resume</CardTitle>
             </CardHeader>
-            <CardContent className='flex justify-around px-10 py-6 bg-black-300 bg-opacity-10 rounded-xl'>
+            <CardContent className='flex justify-around px-10 py-6 bg-indigo-200 bg-opacity-10 rounded-xl'>
               <Image
                   src={'/drive.png'}
                   alt='resume'
@@ -27,13 +27,10 @@ function Resume() {
                   height={50}
               />
 
-              <Link href="/resume.pdf" download={''}>
+              <Link href="https://drive.google.com/file/d/1_XwSViw0e23X8ynY6_yBUCNehVDzvZHU/view" download={''}>
                   <MagicButton
                       title='Download Resume'
                       position='right'
-                      handleClick={() => { 
-                          window.open('/resume.pdf', '_blank')
-                      }}
                       icon={<FaFileDownload/>}
                   />
             </Link>
