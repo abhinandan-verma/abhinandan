@@ -12,7 +12,7 @@ function HeroText() {
         words="Transforming Ideas into Scalable Softwares"
         className="text-center text-[40px] md:text-5xl lg:text-6xl"
         />
-        <p className="text-base md:text-lg mt-4 text-white font-normal inter-var text-center">
+        <p className="text-base md:text-lg mt-4 text-white font-normal inter-var text-center mb-16">
             This is Abhinandan, Full Stack Developer
         </p>
         <Link href="#about">
