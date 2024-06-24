@@ -1,4 +1,5 @@
 import { link } from "fs";
+import { title } from "process";
 
 export const navItems = [
   { name: "About", link: "#about" },
@@ -77,60 +78,21 @@ export const projects = [
     title: "Finance to Manage Your Budget",
     des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
     img: "/sc1.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/c.svg", "/fm.svg"],
     link: "https://finance-seven-psi.vercel.app",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
+    title: "Aarogya_AI - AI doctor Appointments",
+    des: "An AI-powered doctor appointment app that helps you find the best doctor for your needs.",
+    img: "/sc2.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
-  },
-  {
-    id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
-  },
-  {
-    id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
-  },
+    link: "https://github.com/abhinandan-verma/aarogya_ai",
+  }
 ];
 
 export const testimonials = [
-  {
-    quote:
-      "Collaborating with Abhinandan was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Abhinandan's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Abhinandan is the ideal partner.",
-    name: "Vijay Singh",
-    title: "Director of SkilledUp Intelligrnce",
-  },
-  {
-    quote:
-      "Collaborating with Abhinandan was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Abhinandan's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Abhinandan is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Abhinandan was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Abhinandan's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Abhinandan is the ideal partner.",
-    name: "Jenny Wilson",
-    title: "Director of TechSolutions",
-  },
-  {
-    quote:
-      "Collaborating with Abhinandan was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Abhinandan's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Abhinandan is the ideal partner.",
-    name: "Rahul Singh",
-    title: "Director of TechSolutions",
-  }
+
 ];
 
 export const companies = [
@@ -266,18 +228,21 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
+    title: "Github",
     img: "/git.svg",
     hoverColor: "hover:text-gray-400",
     link: "https://github.com/abhinandan-verma",
   },
   {
     id: 2,
+    title: "X",
     img: "/twit.svg",
     hoverColor: "hover:text-blue-400",
     link: "https://x.com/abhinandan_v0",
   },
   {
     id: 3,
+    title: "LinkedIn",
     img: "/link.svg",
     hoverColor: "hover:text-blue-400",
     link: "https://linkedin.com/in/abhinandan-verma",
@@ -285,11 +250,13 @@ export const socialMedia = [
   {
     id: 4,
     img: "/insta.svg",
+    title: "Instagram",
     hoverColor: "hover:text-blue-400",
     link: "https://instagram.com/abhinandanverma555",
   },
   {
     id: 5,
+    title: "Youtube",
     img: "/yt.svg",
     hoverColor: "hover:text-red-400",
     link: "https://youtube.com/abhinandanverma",

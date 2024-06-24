@@ -1,9 +1,9 @@
-import { FaGithub, FaLocationArrow, FaTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedinIn, FaLocationArrow, FaTwitter } from "react-icons/fa6";
 
 import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
 import Image from "next/image";
-import { FaLinkedin } from "react-icons/fa";
+import { FaArrowAltCircleRight, FaDownload, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 import { Button } from "./ui/MovingBorders";
 import ConnectButton from "./ConnectButton";
@@ -40,19 +40,18 @@ const Footer = () => {
         </a>
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-        <div className="flex items-center md:gap-3 gap-6 justify-center">
+        <div className="flex flex-col lg:flex-row items-center md:gap-3 gap-6 justify-center">
           {socialMedia.map((info) => (
             <Link
               key={info.id}
               className="cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180  bg-black-200 rounded-lg border border-black-300"
               href={info.link}
               target="_blank"
-              
             >
-              <ConnectButton
-                title={info.id.toString()}
-                icon={info.img}
-                href={info.link}
+              <MagicButton
+                title={info.title}
+                icon={<FaArrowAltCircleRight />}
+                position="middle"
               />
             </Link>
           ))}
